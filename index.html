@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="lib/style.css" rel="stylesheet" >
+    <title>Lincoln Park</title>
+</head>
+<body>
+    <div id="map" class="map"></div>
+    <div class="list"><ul id="cat-list" data-bind="foreach: places"><button data-bind="text: business, click:$root.placeClicked"></ul></div>
+    <div class="info"></div>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmffy4Ieo8QLmpt6BOAQ6NlUW4r1iW2P0&callback=initMap"></script>
+    <script src="lib/knockout.js"></script>
+    <script src="lib/jquery.js"></script>
+    <script src="lib/app.js"></script>
+</body>
+</html>
